@@ -1,32 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand font-weight-bold" href="{{ path('app_home') }}">Alexis</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="{{ path('app_home') }}">Alexis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_home') }}">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_about') }}">A propos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_projects') }}">Projets</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_contacts') }}">Contacts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/AlexisBoucherie" target="_blank">
-                    <i class="bi bi-github"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/alexis-boucherie/" target="_blank">
-                    <i class="bi bi-linkedin"></i></a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-lg-0 ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_home') }}">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_about') }}">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_projects') }}">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_contacts') }}">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/AlexisBoucherie" target="_blank">
+                        <i class="bi bi-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/alexis-boucherie/" target="_blank">
+                        <i class="bi bi-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
