@@ -2,6 +2,26 @@
 
 {% block title %}Accueil{% endblock %}
 
+{% block home_active %}text-info{% endblock %}
+
 {% block body %}
-<h1>Accueil</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-4 d-flex justify-content-center mx-auto">
+                <img src="assets/img/profilepic.jpg"
+                     alt="Photo d'Alexis Boucherie"
+                     class="img-thumbnail img-fluid rounded-circle">
+            </div>
+            <div class="col-sm-12 col-md-8 p-3 d-flex flex-column justify-content-around">
+                <h1>Développeur Web, PHP / Symfony</h1>
+                <p>"Passionné par le jeu de rôle, les voyages et les langues vivantes, je mets aujourd'hui ma curiosité
+                    et
+                    ma créativité au service des langages du Web."</p>
+                <div>
+                    <a class="btn btn-info" href="{{ path('app_contacts') }}" role="button">Contactez-moi</a>
+                    <a class="btn btn btn-outline-info" href="#" role="button">Téléchargez mon CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

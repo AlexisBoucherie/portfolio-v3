@@ -16,11 +16,44 @@
 <body class="bg-light">
 {# ------- header ------- #}
 <header>
-    {% include '_includes/_navbar.html.twig' %}
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="{{ path('app_home') }}">Alexis Boucherie</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-lg-0 ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% block home_active %}{% endblock %}" href="{{ path('app_home') }}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('app_about') }}" {% block about_active %}{% endblock %}>A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('app_projects') }}" {% block projects_active %}{% endblock %}>Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('app_contacts') }}" {% block contacts_active %}{% endblock %}>Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/AlexisBoucherie" target="_blank">
+                            <i class="bi bi-github text-info"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/alexis-boucherie/" target="_blank">
+                            <i class="bi bi-linkedin text-info"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
 {# ------- main content ------- #}
-<main class="container p-2">
+<main class="d-flex align-items-center">
     {% block body %}{% endblock %}
 </main>
 
